@@ -17,10 +17,7 @@ html {
 }
 
 .container {
-  padding-left: 215px;
-  padding-right: 215px;
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding: 94px 15px 94px 15px;
   margin: 0 auto;
   width: 1200px;
   outline: 2px solid tomato;
@@ -81,6 +78,20 @@ ul {
   line-height: 1.17;
 }
 
+/* Links */
+.link {
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.link:hover,
+link:focus {
+  color: var(--accent-color);
+}
+
 /* Logo */
 .logo {
   text-decoration: none;
@@ -96,22 +107,52 @@ ul {
 }
 
 /* Nav */
-/* Links */
-.link {
-  text-decoration: none;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: #212121;
+.header .container {
+  align-items: center;
 }
 
-.link:hover,
-link:focus {
-  color: var(--accent-color);
+.nav-list {
+  display: flex;
+}
+
+.container > .logo {
+  margin-right: 93px;
+}
+
+.nav-list > .nav-item {
+  margin-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.nav-item > .link {
+  padding-top: inherit;
+  padding-bottom: inherit;
+}
+
+.nav-list > .nav-item:nth-last-child(1) {
+  margin-right: 0px;
+}
+
+.contact-list {
+  display: flex;
+  margin-left: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contact-list > .contact-item {
+  margin-right: 50px;
+}
+
+.contact-list > .contact-item:nth-last-child(1) {
+  margin-right: 0;
 }
 
 .contact {
   color: var(--secondary-text-color);
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 /* footer */
@@ -134,6 +175,12 @@ footer {
 .address-item > .link {
   line-height: 1.71;
   font-weight: 400;
+}
+
+.header .container {
+  display: flex;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 /* CSS FOR INDEX*/
