@@ -10,10 +10,9 @@
 
 .container {
   margin: 0 auto;
-  width: 1200px;
-  /* outline: 2px solid tomato; */
   padding-left: 15px;
   padding-right: 15px;
+  width: 1200px;
 }
 
 .section {
@@ -105,6 +104,8 @@ link:focus {
   font-size: 26px;
   line-height: 1.19;
   color: black;
+  padding-bottom: 25px;
+  padding-top: 24px;
 }
 
 .logo-web {
@@ -126,13 +127,14 @@ link:focus {
 
 .nav-list > .nav-item {
   margin-right: 50px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .nav-item > .link {
-  padding-top: inherit;
-  padding-bottom: inherit;
+  font-size: 14px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .nav-list > .nav-item:nth-last-child(1) {
@@ -141,23 +143,21 @@ link:focus {
 
 .contact-list {
   display: flex;
-  margin-left: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 .contact-list > .contact-item {
-  margin-right: 50px;
+  margin-left: 50px;
+  font-size: 14px;
 }
 
-.contact-list > .contact-item:nth-last-child(1) {
-  margin-right: 0;
+.contact-list > .contact-item:first-child {
+  margin-left: 344px;
 }
 
 .contact {
   color: var(--secondary-text-color);
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 /* Header */
@@ -172,7 +172,7 @@ link:focus {
   background-color: var(--background-color);
 }
 
-.footer > .container {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -181,6 +181,8 @@ link:focus {
   display: inline-block;
   margin-bottom: 20px;
   margin-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .footer-text {
@@ -195,6 +197,7 @@ link:focus {
 
 .address-list .address-item {
   margin-bottom: 9px;
+  font-size: 14px;
 }
 
 .address-list .address-item:nth-last-child(1) {
@@ -212,6 +215,11 @@ link:focus {
 
 /* --------------CSS FOR INDEX----------------*/
 /* Hero */
+.hero.section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .hero {
   background-color: var(--background-color);
   text-align: center;
@@ -248,6 +256,10 @@ link:focus {
 .advantages.section {
   padding-top: 86px;
   padding-bottom: 102px;
+}
+
+.advantage {
+  width: 270px;
 }
 
 .advantage-title {
@@ -334,8 +346,9 @@ link:focus {
   margin-right: 0;
 }
 
-.teammate > .photo {
-  margin-bottom: var(--primary-gap);
+.name-gt {
+  padding-top: var(--primary-gap);
+  padding-bottom: var(--primary-gap);
 }
 
 .name {
@@ -347,12 +360,14 @@ link:focus {
 }
 
 .job-title {
-  margin-bottom: var(--primary-gap);
-
   color: var(--secondary-text-color);
 }
 
 /* ---------------CSS FOR PORTFOLIO-------------- */
+.header-line {
+  border: 1px solid #ececec;
+}
+
 /* Filter */
 .container > .filter-list {
   display: flex;
@@ -366,6 +381,14 @@ link:focus {
 
 .filter-list > .filter-item:nth-last-child(1) {
   margin-right: 0;
+}
+
+.filter-item > .button {
+  padding: 6px 22px;
+}
+
+.filter-item > .button:first-child {
+  padding: 6px 25px;
 }
 
 .secondary.button {
